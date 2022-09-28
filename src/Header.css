@@ -1,0 +1,15 @@
+.Headerlogo {
+  height: 50px;
+}
+.Headerlogowrapper {
+  width: 100vw;
+  z-index: 999;
+  height: 50px;
+  background-color: black;
+  padding-left: 1vw;
+}
+FaBeer{color:red;
+background-color: gold;
+z-index: 999;
+width: 50vw;
+height: auto;}
