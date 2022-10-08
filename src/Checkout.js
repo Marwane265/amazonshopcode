@@ -3,6 +3,7 @@ import { useStateValue } from "./StateProvider";
 import "./Checkout.css";
 import reclame from "./images/reclame2.jpg";
 import CheckoutProduct from "./CheckoutProduct";
+import Subtotal from "./Subtotal" ;
 function Checkout() {
   const [{ basket }] = useStateValue();
   return (
@@ -19,15 +20,21 @@ function Checkout() {
       ) : (
         <div>
           <h2 className="ckeckout__title">Your Shopping Basket</h2>
-          {basket.map((item) => (
+          {basket?.map((item) => (
             <Checkout>
-              item={item.id}
+              id={item.id}
               title={item.title}
               image={item.image}
               price={item.price}
               rating={item.rating}
             </Checkout>
           ))}
+        </div>
+      )}
+      {basket.length > 0 && (
+        <div className="checkout__right">
+          <h1>Subtotal</h1>
+          <Subtotal></Subtotal>
         </div>
       )}
     </div>

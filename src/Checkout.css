@@ -1,9 +1,9 @@
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
 .checkout__ad {
   width: 100%;
-  height: auto;
-  object-fit: contain;
   margin-bottom: 10px;
-}
-.ckeckout__title {
-
 }
