@@ -7,7 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 function App() {
   return (
-    <div className="app"> 
+    <div className="app">
       <Router>
         <Routes>
           <Route path="/" element={[<Header />, <Home />]} />
